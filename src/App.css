@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+
+.dashboard-container {
+  display: flex;
+  flex-flow: row
+  /* align-items: center; */
+}
+
+.graph-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.stream-button-container a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 10px
+}
+
+.stream-button {
+  height: 40px;
+  width: 180px;
+  border-radius: .5rem;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: rgb(68, 95, 68);
+  width: 100vw;
+  font-family: 'Cabin Sketch', cursive;
+  align-items: center;
+  justify-content: space-around;
+  opacity: .9;
+}
+
+@media (max-width: 665px) {
+  .navbar-container{
+    flex-flow: column;
+  }
+}
+
+.logo {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 470px) {
+  .logo {
+    font-size: 1rem
+  }
+}
+
+.logo-name {
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.camera-img, .graph-img {
+  height: 70px;
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+  padding-top: 4rem;
+  height: 12rem;
+  width: 20rem;
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 8rem;
+  border-radius: 5px;
+}
+
+input {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 5px;
+}
+
+.input {
+  padding-top: 20px
+}
+
+.login-button {
+  margin-left: 6rem;
+  margin-top: 1.5rem;
+}
+
+.login-button button{
+  height: 2rem;
+  width: 4rem;
+  border-radius: 2px;
+}
+
