@@ -1,5 +1,5 @@
 import React from "react";
-import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Label, PieChart, Pie, Sector, Cell} from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Legend, Tooltip, PieChart, Pie, Cell} from 'recharts';
 
 class Graph extends React.Component {
 	constructor(props) {
@@ -28,11 +28,10 @@ const ScatterGraph = (props) => {
 	return (
 		<div>
 			<ScatterChart width={400} height={600} margin={{ top: 50, bottom: 20, left: 20 }}>
-				<Label value="Location" position="top" />
 				<XAxis dataKey={'x'} type="number" name='x' unit='in' />
 				<YAxis dataKey={'y'} type="number" name='y' unit='in' />
 				<CartesianGrid />
-				<Scatter name='Miles' data={props.data} opacity={.5} fill='blue' />
+				<Scatter name='Miles' data={props.data} opacity={.5} fill='#2f3772' />
 				<Tooltip cursor={{ strokeDasharray: '8 8' }} />
 			</ScatterChart>
 		</div>
@@ -61,12 +60,12 @@ const PieGraph = (props) => {
 	computeTimeSpentEating(props.data);	
 
 	const piedata = [
-		{ name: 'eating', value: eating }, 
-		{ name: 'not eating', value: notEating },
-		{ name: 'sleeping', value: sleeping }
+		{ name: 'Eating', value: eating }, 
+		{ name: 'Playing', value: notEating },
+		{ name: 'Sleeping', value: sleeping }
 	];
 
-	const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
+	const COLORS = ['#34722f', '#2f3772', '#b0ce15'];
 	const RADIAN = Math.PI / 180;
 	const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
 		const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
@@ -82,22 +81,25 @@ const PieGraph = (props) => {
 
 	return (
 		<div>
-		<PieChart width={400} height={600} onMouseEnter={this.onPieEnter}>
+			<PieChart width={400} height={500} onMouseEnter={this.onPieEnter}>
 			<Pie
-				datakey="Activity"
+				// dataKey="activity"
 				data={piedata}
 				cx={200}
 				cy={250}
 				labelLine={false}
 				label={renderCustomizedLabel}
+				paddingAngle={3}
 				outerRadius={160}
+				innerRadius={80}
 				fill="#8884d8"
 			>
 				{
-					piedata.map((entry, index) => <Cell key={entry} fill={COLORS[index % COLORS.length]} />)
+					piedata.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
 				}
 			</Pie>
 			<Tooltip />
+				<Legend />
 		</PieChart>
 		</div>
 	);

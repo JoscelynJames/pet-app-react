@@ -26,14 +26,14 @@ const Login = () => {
 		<div className="login-container">
 			<form>
 				<div>
-					<input placeholder="username"/>
+					<input type="text" placeholder="username"/>
 				</div>
 				<div className="input">
-					<input placeholder="password"/>
+					<input type="password" placeholder="password"/>
 				</div>
 				<div className="login-button">
-					<a href="http://127.0.0.1:3000/dashboard">
-						<button type="button"href="http://127.0.0.1:3000/dashboard">Login</button>
+					<a href="/dashboard">
+						<button type="button" href="/dashboard">Login</button>
 					</a>
 				</div>
 			</form>

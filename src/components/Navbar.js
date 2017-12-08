@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import camera from "../lib/camera3.png";
-import graph from "../lib/graph3.png";
+import graph from "../lib/pie.svg";
 
 class Navbar extends React.Component {
 	render() {

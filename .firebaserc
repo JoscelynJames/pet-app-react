@@ -1,5 +1,5 @@
 {
   "projects": {
-    "dev": "wheres-my-pet-app"
+    "default": "wheres-my-pet-app"
   }
 }
