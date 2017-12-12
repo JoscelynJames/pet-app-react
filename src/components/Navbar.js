@@ -9,7 +9,9 @@ class Navbar extends React.Component {
 		return (
 			<div className="navbar-container">
 				<div className="logo">
+					{/* <NavLink className="navelink-logo" to="/"> */}
 						<h1 className="logo-name">Where's My Bird App?</h1>
+					{/* </NavLink> */}
 				</div>
 				<div className="icons">
 					<div className="navbar-stream">

@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
-/* html {
-  background-image: url("./lib/watermark2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 
 .dashboard-container {
   display: flex;
@@ -119,4 +114,9 @@ input {
 .stream-container {
   display: flex;
   justify-content: center;
+}
+
+.stream {
+  height: 75vh;
+  margin: 20px;
 }

@@ -6,7 +6,7 @@ class Graph extends React.Component {
 		super(props);
 
 		const points = [
-			{ x: 2, y: 50 }, { x: 2.4, y: 50.5 }, { x: 2.9, y: 48.9 }, { x: 2, y: 50 }, { x: 3, y: 50 }, { x: 18, y: 50 }, { x: 17, y: 50.5 }, { x: 17.8, y: 52 }, { x: 17, y: 53 }, { x: 16.7, y: 40 }, { x: 16.4, y: 46 }, { x: 18, y: 50 }, { x: 3, y: 30 }, { x: 3, y: 30.3 }, { x: 3, y: 30.7 }, { x: 3, y: 28 }, { x: 3, y: 32 }, { x: 4, y: 30 }, { x: 4, y: 31 }, { x: 3.6, y: 29 }, { x: 4.5, y: 30.5 }, { x: 5, y: 30 }, { x: 4.3, y: 30.4 }, { x: 3.4, y: 34 }, { x: 3, y: 40 }, { x: 3.5, y: 40 }, { x: 5, y: 40.9 }, { x: 8, y: 40 }, { x: 8.6, y: 40.7 }, { x: 8.4, y: 40 }, { x: 8.2, y: 40.5 }, { x: 8.3, y: 40.2 }, { x: 8.5, y: 40.1 },
+			{ x: 2, y: 50 }, { x: 2.4, y: 50.5 }, { x: 2.9, y: 48.9 }, { x: 2, y: 50 }, { x: 3, y: 51 }, { x: 18, y: 50 }, { x: 17, y: 50.5 }, { x: 17.8, y: 52 },{ x: 17, y: 53 }, { x: 16.7, y: 40 }, { x: 16.4, y: 46 }, { x: 18, y: 50 }, { x: 2, y: 30 }, { x: 3.8, y: 30.3 }, { x: 3, y: 31.7 }, { x: 2.6, y: 28 }, { x: 3.3, y: 32 }, { x: 4, y: 30 }, { x: 4, y: 31 }, { x: 3.6, y: 29 }, { x: 4.5, y: 30.5 }, { x: 5, y: 30 }, { x: 4.3, y: 30.4 }, { x: 3.4, y: 34 }, { x: 2.4, y: 43 }, { x: 3.5, y: 42 }, { x: 5, y: 40.9 }, { x: 8, y: 40.1 }, { x: 8.6, y: 43.7 }, { x: 8.4, y: 45.3 }, { x: 8.2, y: 42.5 }, { x: 8.3, y: 40.2 }, { x: 8.5, y: 40.1 }, { x: 2, y: 50 }, { x: 2.4, y: 50.5 }, { x: 2.9, y: 48.9 }, { x: 2, y: 51 }, { x: 3.4, y: 50 }, { x: 16.4, y: 53 }, { x: 17, y: 50.5 }, { x: 17.8, y: 52 }, { x: 17, y: 53 }, { x: 16.7, y: 40 }, { x: 16.4, y: 46 }, { x: 18, y: 50 }, { x: 3, y: 30 }, { x: 3.8, y: 30.3 }, { x: 3.2, y: 30.7 }, { x: 2.4, y: 28 }, { x: 3, y: 32 }, { x: 4, y: 31 }, { x: 4, y: 31 }, { x: 3.6, y: 29 }, { x: 4.5, y: 30.5 }, { x: 5, y: 30 }, { x: 4.3, y: 30.4 }, { x: 3.4, y: 34.4 }, { x: 3.2, y: 44 }, { x: 3.5, y: 40 }, { x: 5, y: 40.9 }, { x: 8, y: 47 }, { x: 8.6, y: 40.7 }, { x: 8.4, y: 41 }, { x: 8.2, y: 44.5 }, { x: 8.3, y: 46.2 }, { x: 9.5, y: 40.1 }, { x: 2, y: 50 }, { x: 2.4, y: 50.5 }, { x: 2.9, y: 48.9 }, { x: 2, y: 50.6 }, { x: 3, y: 51.5 }, { x: 18, y: 50 }, { x: 17, y: 50.5 }, { x: 17.8, y: 52 }, { x: 17, y: 53 }, { x: 16.7, y: 40 }, { x: 16.4, y: 46 }, { x: 18, y: 50 }, { x: 2, y: 30 }, { x: 3.8, y: 30.3 }, { x: 3, y: 30.7 }, { x: 2.6, y: 28 }, { x: 3.3, y: 32 }, { x: 4, y: 30 }, { x: 4, y: 31 }, { x: 3.6, y: 29 }, { x: 4.5, y: 30.5 }, { x: 5, y: 31 }, { x: 4.3, y: 30.4 }, { x: 3.4, y: 34 }, { x: 2.4, y: 43 }, { x: 3.5, y: 42 }, { x: 5, y: 40.9 }, { x: 8, y: 40.1 }, { x: 8.6, y: 43.7 }, { x: 8.4, y: 46.3 }, { x: 8.2, y: 42.5 }, { x: 8.3, y: 40.2 }, { x: 8.5, y: 40.1 }, { x: 2, y: 50 }, { x: 2.4, y: 50.5 }, { x: 5.9, y: 43.9 }, { x: 2, y: 50.6 }, { x: 3.4, y: 52 }, { x: 16.4, y: 51 }, { x: 17, y: 50.5 }, { x: 16.8, y: 52 }, { x: 17.2, y: 53.6 }, { x: 14.7, y: 40 }, { x: 15.4, y: 46 }, { x: 18, y: 50 }, { x: 3, y: 30 }, { x: 3.8, y: 30.3 }, { x: 3.2, y: 30.7 }, { x: 12.4, y: 25 }, { x: 3, y: 32 }, { x: 4, y: 31 }, { x: 4, y: 31 }, { x: 3.6, y: 29 }, { x: 4.5, y: 30.5 }, { x: 5, y: 30 }, { x: 4.3, y: 30.4 }, { x: 13.4, y: 34.4 }, { x: 3.2, y: 44 }, { x: 3.5, y: 40 }, { x: 5, y: 40.9 }, { x: 8, y: 47 }, { x: 8.6, y: 40.7 }, { x: 9.4, y: 41 }, { x: 18.2, y: 44.5 }, { x: 8.3, y: 46.2 }, { x: 9.5, y: 40.1 },
 		]
 
 		this.state = {
@@ -27,9 +27,9 @@ class Graph extends React.Component {
 const ScatterGraph = (props) => {
 	return (
 		<div>
-			<ScatterChart width={400} height={600} margin={{ top: 50, bottom: 20, left: 20 }}>
-				<XAxis dataKey={'x'} type="number" name='x' unit='in' />
-				<YAxis dataKey={'y'} type="number" name='y' unit='in' />
+			<ScatterChart width={400} height={550} margin={{ top: 50, bottom: 20, left: 20 }}>
+				<XAxis label={{ value: 'Width of Cage', position: 'bottom' }} dataKey={'x'} type="number" name='x' unit='in' />
+				<YAxis label={{ value: 'Height of Cage', angle: -90, position: 'insideLeft' }} dataKey={'y'} type="number" name='y' unit='in' padding={{ right: 50 }}/>
 				<CartesianGrid />
 				<Scatter name='Miles' data={props.data} opacity={.5} fill='#2f3772' />
 				<Tooltip cursor={{ strokeDasharray: '8 8' }} />
@@ -57,6 +57,7 @@ const PieGraph = (props) => {
 			}
 		};
 	};
+
 	computeTimeSpentEating(props.data);	
 
 	const piedata = [
@@ -81,25 +82,23 @@ const PieGraph = (props) => {
 
 	return (
 		<div>
-			<PieChart width={400} height={500} onMouseEnter={this.onPieEnter}>
+			<PieChart width={400} height={550} onMouseEnter={this.onPieEnter}>
 			<Pie
-				// dataKey="activity"
 				data={piedata}
 				cx={200}
 				cy={250}
 				labelLine={false}
 				label={renderCustomizedLabel}
-				paddingAngle={3}
+				paddingAngle={4}
 				outerRadius={160}
 				innerRadius={80}
-				fill="#8884d8"
-			>
+				fill="#8884d8">
 				{
 					piedata.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
 				}
 			</Pie>
 			<Tooltip />
-				<Legend />
+				<Legend iconSize={20} iconType="circle" />
 		</PieChart>
 		</div>
 	);
